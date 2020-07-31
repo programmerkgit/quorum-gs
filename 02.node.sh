@@ -13,7 +13,7 @@ cat <<EOF > genesis.json
    "0xc5c7b431e1629fb992eb18a79559f667228cd055": {
       "balance": "2000000000000000000000000000"
     }
-},
+  },
  "coinbase": "0x0000000000000000000000000000000000000000",
  "config": {
    "homesteadBlock": 0,
