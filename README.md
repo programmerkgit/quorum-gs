@@ -7,6 +7,11 @@
 # Quorum起動手順
 以下のコマンドを順番に実行することでQuorumを起動することができます。
 
+# Install
+```
+git clone git@github.com:programmerkgit/quorum-gs.git
+```
+
 0. `brew install jq`
 1. `source 00.export-path.sh`
 2. `./01.install-quorum.sh`
