@@ -9,7 +9,7 @@
 
 # Install
 ```
-git clone git@github.com:programmerkgit/quorum-gs.git
+git clone https://github.com/programmerkgit/quorum-gs.git
 ```
 
 0. `brew install jq`
