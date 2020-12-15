@@ -42,3 +42,9 @@ raft.cluster
 ### Performance
 
 install-quorum.shを早くする ディレクトリ構成を整理
+
+
+### Memo
+--rpcport: port for rpc
+--port: port for connection
+--raftport: port for consensus
