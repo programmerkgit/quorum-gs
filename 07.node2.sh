@@ -1,4 +1,5 @@
 #!/bin/bash
+export PATH=$(pwd)/quorum/build/bin:$PATH
 pushd quorum/fromscratch
 mkdir -p node2
 bootnode --genkey=nodekey2

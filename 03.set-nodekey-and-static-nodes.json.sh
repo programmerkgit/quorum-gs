@@ -1,3 +1,6 @@
+#!/bin/bash
+export PATH=$(pwd)/quorum/build/bin:$PATH
+
 pushd quorum/fromscratch
 bootnode --genkey=nodekey
 cp nodekey node1/
@@ -10,4 +13,3 @@ cat <<EOF > static-nodes.json
 ]
 EOF
 cp static-nodes.json node1
-popd

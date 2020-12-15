@@ -1,6 +1,7 @@
 #!/bin/bash
+export PATH=$(pwd)/quorum/build/bin:$PATH
 mkdir -p quorum/fromscratch/node1
-pushd quorum/fromscratch
+cd quorum/fromscratch
 geth --datadir node1 account new
 address=$(cat node1/keystore/UTC* | jq .address | sed -e 's/^"//' -e 's/"$//')
 touch genesis.json
@@ -9,7 +10,7 @@ cat <<EOF > genesis.json
   "alloc": {
     "0x${address}": {
       "balance": "1000000000000000000000000000"
-    },
+    }
   },
  "coinbase": "0x0000000000000000000000000000000000000000",
  "config": {
@@ -32,4 +33,3 @@ cat <<EOF > genesis.json
 }
 EOF
 echo "Change genesis.json file to add alloc key address."
-popd

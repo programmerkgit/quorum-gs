@@ -1,4 +1,4 @@
 git clone https://github.com/jpmorganchase/quorum.git
-pushd quorum
+export PATH=$(pwd)/quorum/build/bin:$PATH
+cd quorum
 make all
-popd
