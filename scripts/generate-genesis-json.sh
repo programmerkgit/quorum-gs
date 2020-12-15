@@ -3,19 +3,19 @@ cd ../
 export PATH=$(pwd)/quorum/build/bin:$PATH
 mkdir -p quorum/fromscratch/node1
 cd quorum/fromscratch
-## listen to user, which node to create account
-## TODO: increment directory name. ex) node1, node2
-geth --datadir node1 account new
-address=$(cat node1/keystore/UTC* | jq .address | sed -e 's/^"//' -e 's/"$//')
+echo "Input public address. This address is assigned initial balance 1000000000000000000000000000"
+read address
 
-# create genesis.json
-## TODO: allocate balance
+if ! [[ $address == 0x* ]]; then
+  echo "address should start with 0x"
+  exit 1
+fi
 
 touch genesis.json
-cat <<EOF > genesis.json
+cat <<EOF >genesis.json
 {
   "alloc": {
-    "0x${address}": {
+    "${address}": {
       "balance": "1000000000000000000000000000"
     }
   },

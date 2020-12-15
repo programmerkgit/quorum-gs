@@ -1,9 +1,10 @@
 #!/bin/bash
+cd ../
 export PATH=$(pwd)/quorum/build/bin:$PATH
 mkdir -p quorum/fromscratch
 cd quorum/fromscratch
 
-function createStaticNodeJsonFile() {
+function createStaticNodesJsonFile() {
   echo "[" >static-nodes.json
   length=$(cat enodes | wc -l)
   addresses=$(cat enodes)
@@ -22,7 +23,9 @@ function createStaticNodeJsonFile() {
     ((i = i + 1))
   done
   echo "]" >>static-nodes.json
+}
 
+function copyStaticNodesJsonFileToEachNode() {
   # copy static-nodes.json to each dir
   i=1
   while [ -d "node${i}" ]; do
@@ -31,4 +34,5 @@ function createStaticNodeJsonFile() {
   done
 }
 
-createStaticNodeJsonFile
+createStaticNodesJsonFile
+copyStaticNodesJsonFileToEachNode
