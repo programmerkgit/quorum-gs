@@ -30,7 +30,8 @@ raft.cluster
 - quorum ps
 - quorum stop id
 - quorum build ?
-
 ### Multiple insatncesc
 
 - quorum-compose up
+### Performance
+install-quorum.shを早くする
