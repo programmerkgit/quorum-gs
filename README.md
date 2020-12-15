@@ -17,6 +17,10 @@
 3. `./run-node.sh`
 4. `./attach-node.sh`
 
+# Nodeの削除
+
+./clean-node.sh
+
 # kill process
 
 from activity monitor, kill geth raft.removePeer(id)
@@ -30,9 +34,11 @@ raft.cluster
 - quorum ps
 - quorum stop id
 - quorum build ?
+
 ### Multiple insatncesc
 
 - quorum-compose up
+
 ### Performance
-install-quorum.shを早くする
-ディレクトリ構成を整理
+
+install-quorum.shを早くする ディレクトリ構成を整理
