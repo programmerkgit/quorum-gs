@@ -35,3 +35,4 @@ raft.cluster
 - quorum-compose up
 ### Performance
 install-quorum.shを早くする
+ディレクトリ構成を整理
