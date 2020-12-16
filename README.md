@@ -24,8 +24,6 @@ MacOS
 ./1.install-quorum.sh
 ```
 
-以下のコマンドを順番に実行することでQuorumを起動することができます。
-
 ### 2.Nodeの作成
 
 以下のコマンドで好きな数のNodeを作成します。一度実行する度にNode1, Node2, Node3...とNodeが作成されていきます。
