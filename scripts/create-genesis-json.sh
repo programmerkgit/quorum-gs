@@ -1,12 +1,12 @@
 #!/bin/bash
 cd ../
 export PATH=$(pwd)/quorum/build/bin:$PATH
-mkdir -p quorum/fromscratch/node1
+mkdir -p quorum/fromscratch
 cd quorum/fromscratch
 
 function createGenesisFile() {
 
-  echo "Input public address. This address is assigned initial balance 1000000000000000000000000000"
+  echo "Input public address to which initial balance is allocated"
   read address
 
   if ! [[ $address == 0x* ]]; then

@@ -28,7 +28,7 @@ brew install jq
 以下のコマンドでQuorumをインストール・ビルドします。
 
 ```
-./install-quorum.sh
+./1.install-quorum.sh
 ```
 
 以下のコマンドを順番に実行することでQuorumを起動することができます。
@@ -38,36 +38,39 @@ brew install jq
 以下のコマンドで好きな数のNodeを作成します。一度実行する度にNode1, Node2, Node3...とNodeが作成されていきます。
 
 ```
-./add-node.sh
+./2.add-node.sh
 ```
 
 ### 3.アカウントの作成
 各Nodeで利用するアカウントを作成します。
+この時に生成された公開鍵のうちのどれか一つは後の手順で利用するためメモしておきましょう。
 
 ```
-./create-account.sh
+./3.create-account.sh
 ```
 
 ### 4. Nodeの設定
 ノードの作成・アカウントを作成したらネットワーク設定・各ノードの設定をおこないます。
+この時、初期残高を割り当てるアカウントの
+
 この手順以降に追加でのノードの追加・アカウントの追加は現在サポートしていません。
 
 ```
-./set-nodes.sh
+./4.set-nodes.sh
 ```
 
 ### 5. Nodeの起動
 作成したNodeのうち任意のNodeを起動します。
 
 ```
-./run-node.sh
+./5.run-node.sh
 ```
 
 ### 6. Nodeへの接続
 起動したNodeのコンソールへ接続します。
 
 ```
-./attach-node.sh
+./6.attach-node.sh
 ```
 
 ## その他
@@ -77,7 +80,7 @@ brew install jq
 この場合手順 '2. Nodeの作成' から全てやり直してください。
 
 ```
-./clean-node.sh
+./9.clean-node.sh
 ```
 
 ### Nodeの停止
@@ -102,3 +105,4 @@ kill -9 $processid
 
 - quorum-compose up
 
+0x2d692338a367A12F33F7aD788868dcb5aF81c5B1
