@@ -56,7 +56,7 @@ brew install jq
 この手順以降に追加でのノードの追加・アカウントの追加は現在サポートしていません。
 
 ```
-./4.set-nodes.sh
+./4.set-up-nodes.sh
 ```
 
 ### 5. Nodeの起動
@@ -80,7 +80,7 @@ brew install jq
 この場合手順 '2. Nodeの作成' から全てやり直してください。
 
 ```
-./9.clean-node.sh
+./clean-node.sh
 ```
 
 ### Nodeの停止
