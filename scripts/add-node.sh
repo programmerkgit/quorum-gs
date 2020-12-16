@@ -20,5 +20,6 @@ function addNode() {
   address=$(cat "${nodedir}/enode")
   touch enodes
   echo $address >>enodes
+  echo "$nodedir is created"
 }
 addNode

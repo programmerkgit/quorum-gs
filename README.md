@@ -29,7 +29,7 @@ MacOS
 以下のコマンドで好きな数のNodeを作成します。一度実行する度にNode1, Node2, Node3...とNodeが作成されていきます。
 
 ```
-./2.add-node.sh
+./2.creaet-node.sh
 ```
 
 ### 3.アカウントの作成
