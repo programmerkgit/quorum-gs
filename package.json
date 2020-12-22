@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "easy node runner for quorum development",
   "main": "dist/index.js",
+  "bin": {
+    "quono": "./dist/index.js"
+  },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "tsc --watch"
   },
   "repository": {
     "type": "git",
