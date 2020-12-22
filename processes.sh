@@ -10,7 +10,7 @@ function removeNotExistProcessesFromFile() {
     pid=$1
 
     # プロセスが存在する場合のみラインを記述
-    ps aux -o command,pid | grep geth | grep "$pid" > /dev/null 2>&1
+    ps ax -o command,pid | grep geth | grep "$pid" > /dev/null 2>&1
     if [ $? -eq 0 ]; then
       echo "$line" >>"$temp_file"
     fi

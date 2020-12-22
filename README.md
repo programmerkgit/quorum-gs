@@ -56,7 +56,7 @@ MacOS
 作成したNodeのうち任意のNodeを起動します。
 
 ```
-./5.run-node.sh
+./run-node.sh
 ```
 
 ### 6. Nodeへの接続
@@ -64,7 +64,7 @@ MacOS
 起動したNodeのコンソールへ接続します。
 
 ```
-./6.attach-node.sh
+./attach-node.sh
 ```
 
 ## その他
