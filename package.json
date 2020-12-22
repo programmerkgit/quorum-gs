@@ -1,0 +1,19 @@
+{
+  "name": "quono",
+  "version": "1.0.0",
+  "description": "easy node runner for quorum development",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programmerkgit/quorum-gs.git"
+  },
+  "author": "k.kubo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programmerkgit/quorum-gs/issues"
+  },
+  "homepage": "https://github.com/programmerkgit/quorum-gs#readme"
+}
