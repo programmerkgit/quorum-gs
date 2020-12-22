@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/programmerkgit/quorum-gs/issues"
   },
-  "homepage": "https://github.com/programmerkgit/quorum-gs#readme"
+  "homepage": "https://github.com/programmerkgit/quorum-gs#readme",
+  "devDependencies": {
+    "@types/yargs": "^15.0.12"
+  },
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
 }
