@@ -1,6 +1,6 @@
 # quorum-gs
 
-quorum-gs helps build quorum raft cluster in a minute for development purpose.
+quorum-gs helps you to build quorum raft cluster in a minute for development purpose.
 
 <a href="https://asciinema.org/a/MB2g4ALTTU4QnAKz6CEHWV3va" target="_blank"><img src="https://asciinema.org/a/MB2g4ALTTU4QnAKz6CEHWV3va.svg" /></a>
 
