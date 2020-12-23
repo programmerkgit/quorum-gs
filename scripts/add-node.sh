@@ -21,5 +21,9 @@ function addNode() {
   touch enodes
   echo $address >>enodes
   echo "$nodedir is created"
+  if [ -f "genesis.json" ]; then
+    cd ../../scripts
+      ./init-node.sh "$nodedir"
+  fi
 }
 addNode
