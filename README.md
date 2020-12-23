@@ -1,4 +1,109 @@
-# Quorum スターター
+# quorum-gs
+
+quorum-gs helps build quorum raft cluster in a minute for development purpose.
+
+<a href="https://asciinema.org/a/MB2g4ALTTU4QnAKz6CEHWV3va" target="_blank"><img src="https://asciinema.org/a/MB2g4ALTTU4QnAKz6CEHWV3va.svg" /></a>
+
+## Environment
+MacOS
+
+## processes
+
+1. Install quorum
+2. Create nodes.
+3. Create accounts.
+4. Initialize network setting.
+5. Run node.
+6. Attach to node.
+
+### 1. Install quorum
+This command install quorum and build. 
+
+```
+./install-quorum.sh
+```
+
+### 2. Create nodes
+Run the script. You can create any number of nodes.
+
+```
+./creaet-node.sh
+```
+
+### 3.Create accounts
+Create an account on a node. You should keep one public address to allocate initial balance on the next step. 
+
+```
+./create-account.sh
+```
+
+### 4. Initialize network
+You allocate initial balance to an account and create network setting files.
+
+```
+./4.init-network.sh
+```
+
+### 5. Run node
+Chose one node to run from the nodes you created.
+
+```
+./run-node.sh
+```
+
+### 5. Attach to node.
+You choose a node to attach.
+
+```
+./attach-node.sh
+```
+
+## Other
+
+### Delete all nodes
+Delete all nodes and data and network settings. 
+
+```
+./clean-node.sh
+```
+
+### List running node processes
+
+```
+./processes.sh
+```
+
+### Kill node
+
+```
+./processes.sh # list all running nodes
+./kill-node.sh "$pid"
+```
+
+## TODO
+
+### Commands to implement
+
+- quorum run --port=21000
+- quorum ps
+- quorum stop id
+- quorum build ?
+
+### Multiple instance
+
+- quorum-compose up
+
+0x2d692338a367A12F33F7aD788868dcb5aF81c5B1
+
+### How to get PID
+
+foo & FOO_PID=$!
+https://stackoverflow.com/questions/1908610/how-to-get-process-id-of-background-process
+
+
+---
+
+# Quorum スターター[Japanese]
 
 QuorumのRaftクラスターをローカル環境で簡易的に動作させるためのプロジェクトです。 開発・検証用途に利用してください。
 
