@@ -19,7 +19,7 @@ function addNode() {
   bootnode --nodekey="${nodedir}/nodekey" --writeaddress >"$nodedir"/enode
   address=$(cat "${nodedir}/enode")
   touch enodes
-  echo $address >>enodes
+  echo "$address" >>enodes
   echo "$nodedir is created"
 
   # genesis.jsonがすでに存在している場合はnodeの初期化も済ませる。
