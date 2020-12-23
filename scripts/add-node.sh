@@ -21,9 +21,11 @@ function addNode() {
   touch enodes
   echo $address >>enodes
   echo "$nodedir is created"
+
+  # genesis.jsonがすでに存在している場合はnodeの初期化も済ませる。
   if [ -f "genesis.json" ]; then
     cd ../../scripts
-      ./init-node.sh "$nodedir"
+    ./init-node.sh "$nodedir" >/dev/null 2>&1
   fi
 }
 addNode
