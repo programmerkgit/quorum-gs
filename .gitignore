@@ -3,3 +3,4 @@ quorum
 dev
 dist
 .db
+node_modules
