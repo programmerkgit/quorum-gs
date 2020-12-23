@@ -19,9 +19,9 @@ function createStaticNodesJsonFile() {
     else
       suffix=""
     fi
-    echo "  \"enode://${address}@127.0.0.1:${port}?discport=0&raftport=${raftport}\"${suffix}" >>static-nodes.json
+    echo "  \"enode://${address}@127.0.0.1:${port}?discport=0&raftport=${raftport}\"${suffix}"
     ((i = i + 1))
-  done
+  done >> static-nodes.json
   echo "]" >>static-nodes.json
 }
 

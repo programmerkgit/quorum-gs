@@ -1,11 +1,7 @@
 #!/bin/bash
-cd ../
-export PATH=$(pwd)/quorum/build/bin:$PATH
-mkdir -p quorum/fromscratch
-cd quorum/fromscratch
 
 i=1
-while [ -d "node${i}" ]; do
-  geth --datadir "node${i}" init genesis.json
+while [ -d "../quorum/fromscratch/node${i}" ]; do
+  ./init-node.sh "node${i}"
   ((i = i + 1))
 done
