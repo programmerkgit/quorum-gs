@@ -80,27 +80,6 @@ Delete all nodes and data and network settings.
 ./kill-node.sh "$pid"
 ```
 
-## TODO
-
-### Commands to implement
-
-- quorum run --port=21000
-- quorum ps
-- quorum stop id
-- quorum build ?
-
-### Multiple instance
-
-- quorum-compose up
-
-0x2d692338a367A12F33F7aD788868dcb5aF81c5B1
-
-### How to get PID
-
-foo & FOO_PID=$!
-https://stackoverflow.com/questions/1908610/how-to-get-process-id-of-background-process
-
-
 ---
 
 # Quorum スターター[Japanese]
